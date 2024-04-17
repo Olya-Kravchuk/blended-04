@@ -3,11 +3,10 @@
     "baseUrl": "src",
     "paths": {
       "components/*": ["components/*"],
-      "pages/*": ["pages/*"],
+      "data/*": ["data/*"],
       "helpers/*": ["helpers/*"],
       "styles/*": ["styles/*"],
-      "service/*": ["service/*"],
-      "reduxCurrency/*": ["reduxCurrency/*"]
+      "reduxTodo/*": ["reduxTodo/*"]
     }
   },
   "include": ["src"]

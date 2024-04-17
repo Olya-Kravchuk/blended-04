@@ -1,45 +1,14 @@
-import { Suspense } from 'react';
-import { Outlet, NavLink } from 'react-router-dom';
-
-import { MdCurrencyExchange } from 'react-icons/md';
-
+import { Container } from 'components';
 import styles from './Header.module.css';
 
 export const Header = () => {
   return (
-    <>
-      <header className={styles.header}>
-        <div className={styles.wrapper}>
-          <MdCurrencyExchange className={styles.logo} />
-          <nav>
-            <ul className={styles.nav}>
-              <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive ? styles.active : styles.link
-                  }
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/rates"
-                  className={({ isActive }) =>
-                    isActive ? styles.active : styles.link
-                  }
-                >
-                  Rates
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
-    </>
+    <header className={styles.header}>
+      <Container>
+        <nav className={styles.nav}>
+          <h3 className={styles.title}>Lesson 4 redux</h3>
+        </nav>
+      </Container>
+    </header>
   );
 };

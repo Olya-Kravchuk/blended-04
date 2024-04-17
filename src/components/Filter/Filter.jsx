@@ -1,9 +1,5 @@
-import styles from './Filter.module.css';
+import style from './Filter.module.css';
+
 export const Filter = () => {
-  return (
-    <input
-      placeholder="What currency are you looking for?🧐"
-      className={styles.input}
-    />
-  );
+  return <input className={style.input} placeholder="Find it" name="filter" />;
 };

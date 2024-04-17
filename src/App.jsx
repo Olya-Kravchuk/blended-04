@@ -1,5 +1,14 @@
-import { Heading } from 'components';
+import { Section, Container, Header, Text } from 'components';
 
 export const App = () => {
-  return <Heading title="Just do it!" />;
+  return (
+    <>
+      <Header />
+      <Section>
+        <Container>
+          <Text textAlign="center">Create your first todo😉</Text>
+        </Container>
+      </Section>
+    </>
+  );
 };

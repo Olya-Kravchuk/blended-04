@@ -7,11 +7,10 @@ export default defineConfig({
   resolve: {
     alias: {
       components: '/src/components',
-      pages: '/src/pages',
+      data: '/src/data',
       helpers: '/src/helpers',
       styles: '/src/styles',
-      service: '/src/service',
-      reduxState: '/src/reduxState',
+      reduxTodo: '/src/reduxTodo',
     },
   },
 });
