@@ -1,4 +1,4 @@
-import { Section, Container, Header, Text } from 'components';
+import { Section, Container, Header, TodoList, Form, Filter } from 'components';
 
 export const App = () => {
   return (
@@ -6,7 +6,9 @@ export const App = () => {
       <Header />
       <Section>
         <Container>
-          <Text textAlign="center">Create your first todo😉</Text>
+          <Form/>
+          <Filter/>
+          <TodoList/>
         </Container>
       </Section>
     </>
