@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { selectFilter } from 'reduxTodo/filterSlice';
 
 export const TodoList = () => {
-  const toDos = useSelector(state => state.toDo.todos.items);
+  const toDos = useSelector(state => state.todos.todos.items);
   console.log(toDos);
 
   const filter = useSelector(selectFilter);
